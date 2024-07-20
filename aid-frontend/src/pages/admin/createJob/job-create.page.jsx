@@ -24,11 +24,23 @@ function AdminJobCreatePage() {
 
     await createJob({
       title: formData.title,
-      type: formData.type,
       description: formData.description,
+      type: formData.type,
       location: formData.location,
       questions: [formData.q1, formData.q2, formData.q3],
     });
+    
+    setFormData({
+      title: '',
+      description: '',
+      type: '',
+      location: '',
+      q1: '',
+      q2: '',
+      q3: '',
+    });
+
+
   };
 
   return (
