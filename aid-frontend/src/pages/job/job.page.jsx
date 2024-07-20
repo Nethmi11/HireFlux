@@ -68,6 +68,13 @@ function JobPage() {
       job: params.id,
       userId: user.id,
     });
+
+    setFormData({
+      fullName: '',
+      a1: '',
+      a2: '',
+      a3: '',
+    });
   };
 
   if (!isLoaded) {
