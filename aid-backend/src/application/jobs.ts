@@ -20,7 +20,7 @@ export const createJob = async (req: Request, res: Response, next: NextFunction)
             throw new ValidationError(job.error.message)
         }
 
-        await Job.create(job);
+        await Job.create(job.data);
         return res.status(201).send();
     } catch (error) {
         next(error)
