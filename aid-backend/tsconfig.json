@@ -1,9 +1,11 @@
-{
-  "compilerOptions": {
-    "sourceMap": true,
-    "outDir": "dist",
+"compilerOptions": {
+    "target": "ES2015",  // or higher (ES6+)
+    "module": "commonjs",
+    "lib": ["ES2015", "DOM"],  // Add "DOM" here
+    "outDir": "./dist",
+    "rootDir": "./src",
     "strict": true,
-    "lib": ["esnext"],
     "esModuleInterop": true
-  }
-}
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
