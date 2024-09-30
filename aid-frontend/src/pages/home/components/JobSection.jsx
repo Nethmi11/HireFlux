@@ -11,12 +11,9 @@ function JobSection() {
     setIsJobsLoading(true);
     getJobs()
       .then((data) => {
-        if (Array.isArray(data)) {
-          setJobs(data);
-        } else {
-          console.error("Expected an array, received:", data); // Handle unexpected response
-          setJobs([]); // Fallback to an empty array
-        }
+        setJobs(data);
+        
+  
       })
       .catch(() => {
         setIsJobsError(true);
@@ -52,8 +49,8 @@ function JobSection() {
     <section className="py-8">
       <h2>Available Jobs</h2>
       <div className="mt-4 flex flex-col gap-y-8">
-        {Array.isArray(jobs) && jobs.length > 0 ? (
-            jobs.map((job) => (
+        {jobs.map((job) => {
+            return (
               <JobCard
                 key={job._id}
                 title={job.title}
@@ -61,10 +58,9 @@ function JobSection() {
                 type={job.type}
                 location={job.location}
               />
-            ))
-          ) : (
-            <p>No jobs available</p>
-          )}
+            );
+          })}
+
       </div>
     </section>
   );
