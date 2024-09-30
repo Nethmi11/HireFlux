@@ -7,6 +7,7 @@ import { z } from "zod";
 export const getAllJobs = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const jobs = await Job.find();
+        console.log("Jobs found: ", jobs);
         return res.status(200).json(jobs);
     } catch (error) {
         next(error)
