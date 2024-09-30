@@ -10,6 +10,8 @@ function JobSection() {
   useEffect(() => {
     setIsJobsLoading(true);
     getJobs()
+      .then(response => response.json())
+      .then(data => console.log(data))
       .then((data) => {
         setJobs(data);
         
