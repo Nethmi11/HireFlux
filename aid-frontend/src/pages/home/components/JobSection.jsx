@@ -11,7 +11,7 @@ function JobSection() {
     setIsJobsLoading(true);
     getJobs()
       .then((data) => {
-        setJobs(data);
+        setJobs(data.jobs);
         
       })
       .catch(() => {
