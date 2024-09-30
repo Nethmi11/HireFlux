@@ -18,6 +18,7 @@ function JobSection() {
   
       })
       .catch(() => {
+        console.error('Error processing /jobs request:', error);
         setIsJobsError(true);
       })
       .finally(() => {
