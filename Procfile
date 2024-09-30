@@ -1,1 +1,1 @@
-web: cd aid-backend && npm install && npm run build && npm start
+
