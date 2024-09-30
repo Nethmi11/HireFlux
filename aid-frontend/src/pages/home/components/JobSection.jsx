@@ -10,15 +10,11 @@ function JobSection() {
   useEffect(() => {
     setIsJobsLoading(true);
     getJobs()
-      .then(response => response.json())
-      .then(data => console.log(data))
       .then((data) => {
         setJobs(data);
         
-  
       })
       .catch(() => {
-        console.error('Error processing /jobs request:', error);
         setIsJobsError(true);
       })
       .finally(() => {
