@@ -13,6 +13,7 @@ function JobSection() {
       .then((data) => {
         console.log("Jobs data from API: ", data);  // <-- Log fetched data
         setJobs(data);
+        console.log(typeof data)
         
       })
       .catch(() => {
