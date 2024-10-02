@@ -9,11 +9,7 @@ import GlobalErrorHandlingMiddleware from "./api/middleware/global-error-handler
 const app = express();
 
 app.use(express.json());
-app.use(cors({
-  origin: ['https://comfy-bublanina-6e91f9.netlify.app'], // Add your frontend URL
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
-  credentials: true // Include this if you need to send cookies or use authorization headers
-}));
+app.use(cors());
 
 connectDB();
 
