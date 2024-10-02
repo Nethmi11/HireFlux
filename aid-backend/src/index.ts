@@ -9,7 +9,11 @@ import GlobalErrorHandlingMiddleware from "./api/middleware/global-error-handler
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ['https://main--comfy-bublanina-6e91f9.netlify.app'], // Your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true // If Clerk uses cookies or session-based auth
+}));
 
 connectDB();
 
