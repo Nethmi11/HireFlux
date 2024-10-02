@@ -11,6 +11,7 @@ function JobSection() {
     setIsJobsLoading(true);
     getJobs()
       .then((data) => {
+        console.log("Jobs data from API: ", data);  // <-- Log fetched data
         setJobs(data);
         
       })
@@ -48,6 +49,7 @@ function JobSection() {
     <section className="py-8">
       <h2>Available Jobs</h2>
       <div className="mt-4 flex flex-col gap-y-8">
+        {console.log("Jobs array before map: ", jobs)}  {/* <-- Log before mapping */}
         {jobs.map((job) => {
             return (
               <JobCard
