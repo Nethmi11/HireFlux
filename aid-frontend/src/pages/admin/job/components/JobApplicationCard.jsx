@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function JobApplicationCard({ _id, jobId, fullName }) {
   return (
-    <Link to={`/admin/jobs/${jobId}/application/${_id}`} className="block">
+    <Link to={`/admin/job/${jobId}/application/${_id}`} className="block">
       <Card>
         <CardHeader className="flex-row justify-between items-center">
           <CardTitle>{fullName}</CardTitle>
