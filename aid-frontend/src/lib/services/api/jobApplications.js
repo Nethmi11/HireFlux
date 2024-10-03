@@ -1,6 +1,6 @@
 
 export const getJobApllicationsForJob = async (id) => {
-  const { getToken } = useAuth();   const token = await getToken();
+  const token = await window.Clerk.session.getToken();
 
   const res = await fetch(`https://hireflux-production.up.railway.app/jobApplications?jobId=${id}`, {
     method: "GET",
@@ -13,7 +13,7 @@ export const getJobApllicationsForJob = async (id) => {
 };
 
 export const getJobApplicationById = async (id) => {
-  const { getToken } = useAuth();   const token = await getToken();
+  const token = await window.Clerk.session.getToken();
 
   const res = await fetch(`https://hireflux-production.up.railway.app/jobApplications/${id}`, {
     method: "GET",
@@ -31,7 +31,7 @@ export const createJobApplication = async ({
   job,
   answers,
 }) => {
-  const { getToken } = useAuth();   const token = await getToken();
+  const token = await window.Clerk.session.getToken();
 
   await fetch("https://hireflux-production.up.railway.app/jobApplications", {
     method: "POST",
