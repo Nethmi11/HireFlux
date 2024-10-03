@@ -23,11 +23,12 @@ function AdminJobPage() {
 
     getJobById(id)
       .then((data) => {
+        console.log("Fetched Job Data:", data); // Log fetched job data
         setJob(data);
         setIsJobLoading(false);
       })
       .catch((err) => {
-        console.log(err);
+        onsole.error("Error fetching job data:", err); // Log the error
         setIsJobLoading(false);
       });
 
@@ -73,14 +74,17 @@ function AdminJobPage() {
       <div className="py-8">
         <h2>Job Applications</h2>
         <div className="mt-4 flex flex-col gap-y-4">
-          {jobApplications.map((application) => (
-            <JobApplicationCard
-              key={application._id}
-              fullName={application.fullName}
-              _id={application._id}
-              jobId={id}
-            />
-          ))}
+          {jobApplications.map((application) => {
+            console.log("Rendering job application:", application); // Log each application
+            return (
+              <JobApplicationCard
+                key={application._id}
+                fullName={application.fullName}
+                _id={application._id}
+                jobId={id}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
