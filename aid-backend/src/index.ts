@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: ['https://main--comfy-bublanina-6e91f9.netlify.app'], // Your frontend URL
+  origin: ['https://spectacular-torrone-4fa4cb.netlify.app/'], // Your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true, // If Clerk uses cookies or session-based auth
   allowedHeaders: ['Authorization', 'Content-Type'] // Ensure Authorization is allowed
