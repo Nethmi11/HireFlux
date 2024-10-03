@@ -10,11 +10,13 @@ import { Navigate, useParams } from "react-router-dom";
 
 const getJob = async (id) => {
   const token = await window.Clerk.session.getToken();
+  console.log("Token:", token); // Log the token for debugging
 
   const res = await fetch(`https://hireflux-production.up.railway.app/jobs/${id}`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
     },
   });
   const job = await res.json();
