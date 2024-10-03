@@ -14,6 +14,7 @@ const getJob = async (id) => {
 
   const res = await fetch(`https://hireflux-production.up.railway.app/jobs/${id}`, {
     method: "GET",
+    credentials: 'include',
     headers: {
       Authorization: `Bearer ${token}`,
       'Content-Type': 'application/json',
