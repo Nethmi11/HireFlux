@@ -18,7 +18,5 @@ app.use("/jobApplications", jobApplicationRouter)
 
 app.use(GlobalErrorHandlingMiddleware)
 
-const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 8000;
-app.listen(port, "0.0.0.0", () => {
-  console.log(`Server is listening on port ${port} and accessible from network interfaces.`);
-});
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}.`));
