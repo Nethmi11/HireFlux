@@ -9,7 +9,8 @@ import { useState, useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
 
 const getJob = async (id) => {
-  const token = await window.Clerk.session.getToken();
+  const { getToken } = useAuth();   
+  const token = await getToken();
   console.log("Token:", token); // Log the token for debugging
 
   const res = await fetch(`https://hireflux-production.up.railway.app/jobs/${id}`, {
@@ -23,7 +24,8 @@ const getJob = async (id) => {
 };
 
 const createJob = async (jobApplication) => {
-  const token = await window.Clerk.session.getToken();
+  const { getToken } = useAuth();   
+  const token = await getToken();
 
   await fetch(`https://hireflux-production.up.railway.app/jobApplications`, {
     method: "POST",

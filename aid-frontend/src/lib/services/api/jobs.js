@@ -10,7 +10,7 @@ export const getJobs = async () => {
 };
 
 export const getJobById = async (id) => {
-  const token = await window.Clerk.session.getToken();
+  const { getToken } = useAuth();   const token = await getToken();
   
   const res = await fetch(`https://hireflux-production.up.railway.app/jobs/${id}`, {
     method: "GET",
@@ -30,7 +30,7 @@ export const createJob = async ({
   location,
   questions,
 }) => {
-  const token = await window.Clerk.session.getToken();
+  const { getToken } = useAuth();   const token = await getToken();
 
   await fetch("https://hireflux-production.up.railway.app/jobs", {
     method: "POST",
