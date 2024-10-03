@@ -9,12 +9,7 @@ import GlobalErrorHandlingMiddleware from "./api/middleware/global-error-handler
 const app = express();
 
 app.use(express.json());
-app.use(cors({
-  origin: ['*'], // Your frontend URL
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, // If Clerk uses cookies or session-based auth
-  allowedHeaders: ['Authorization', 'Content-Type'] // Ensure Authorization is allowed
-}));
+app.use(cors());
 
 connectDB();
 
