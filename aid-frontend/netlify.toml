@@ -1,7 +1,0 @@
-[build]
-  functions = "netlify/functions"  # Points to where your Netlify functions are located
-
-[[redirects]]
-  from = "/admin/*"
-  to = "/.netlify/functions/admin"
-  status = 200
