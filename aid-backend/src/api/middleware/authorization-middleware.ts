@@ -7,6 +7,7 @@ const AuthorizationMiddleware = (
   next: NextFunction
 ) => {
   //@ts-ignore
+  console.log(req.auth);
   if (req.auth.claims.public_metadata.role !== "admin") {
     throw new ForbiddenError("Admin only route");
   }
