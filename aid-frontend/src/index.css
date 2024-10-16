@@ -4,51 +4,49 @@
 
 @layer base {
   :root {
-    /* Name: custom color palette
-       Author: Ilias Ism
-       URL: https://gradient.page */
+    /* Name: custom color palette */
 
     /* Gradient for the background */
     --gradient: #1488CC;
 
     /* Background and foreground colors */
-    --background: 215 53.3% 3.52%; /* Very dark blue */
-    --foreground: 215 8.2% 97.2%; /* Very light grayish-blue, almost white */
+    --background: hsl(220, 45%, 12%); /* Darker bluish background similar to the hero section */
+    --foreground: hsl(0, 0%, 100%); /* Pure white text for contrast */
 
     /* Muted colors */
-    --muted: 215 41% 13.2%;
-    --muted-foreground: 215 8.2% 54.4%;
+    --muted: hsl(220, 20%, 20%); /* A muted, dark blue-gray */
+    --muted-foreground: hsl(0, 0%, 90%); /* Light gray for text on muted background */
 
     /* Popover colors */
-    --popover: 215 48.6% 5.72%;
-    --popover-foreground: 215 8.2% 97.2%;
+    --popover: hsl(220, 40%, 15%); /* Dark blue for popovers */
+    --popover-foreground: hsl(0, 0%, 100%); /* White text for popovers */
 
-    /* Update card and button color to bluish neon */
-    --card: hsl(215, 82%, 44%); /* Neon bluish color for cards */
+    /* Card and button color updated to match the hero section */
+    --card: hsl(210, 80%, 30%); /* Neon bluish color for cards, similar to the neon effect in the hero */
     --card-foreground: hsl(0, 0%, 100%); /* White text for cards */
 
     /* Sign-up button */
-    --primary: hsl(215, 82%, 44%); /* Neon bluish color for the sign-up button */
+    --primary: hsl(210, 80%, 30%); /* Neon bluish color for the sign-up button */
     --primary-foreground: hsl(0, 0%, 100%); /* White text for buttons */
 
     /* Border and input colors */
-    --border: 215 41% 13.2%;
-    --input: 215 41% 13.2%;
+    --border: hsl(220, 40%, 20%); /* Darker blue for borders */
+    --input: hsl(220, 40%, 20%); /* Same color for inputs */
 
     /* Secondary color */
-    --secondary: 215 41% 13.2%;
-    --secondary-foreground: 215 8.2% 97.2%;
+    --secondary: hsl(220, 40%, 20%); /* Dark blue for secondary elements */
+    --secondary-foreground: hsl(0, 0%, 100%); /* White for secondary elements' text */
 
     /* Accent colors */
-    --accent: 215 41% 13.2%;
-    --accent-foreground: 215 8.2% 97.2%;
+    --accent: hsl(210, 80%, 30%); /* Neon blue accent */
+    --accent-foreground: hsl(0, 0%, 100%); /* White text for accents */
 
     /* Destructive action colors */
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 215 8.2% 97.2%;
+    --destructive: hsl(0, 70%, 40%); /* Red for destructive actions */
+    --destructive-foreground: hsl(0, 0%, 100%); /* White text for destructive actions */
 
     /* Ring color */
-    --ring: 215 82% 44%; /* Neon blue for hover or focus rings */
+    --ring: hsl(210, 80%, 50%); /* Neon blue for hover or focus rings */
   }
 }
 
@@ -70,7 +68,6 @@
   font-weight: bold;
 }
 
-
 @layer base {
   * {
     @apply border-border;
@@ -85,7 +82,7 @@
     @apply scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0;
   }
   h3 {
-    @apply scroll-m-20 text-xl font-medium  tracking-tight;
+    @apply scroll-m-20 text-xl font-medium tracking-tight;
   }
   p {
     @apply leading-7 [&:not(:first-child)]:mt-6;
