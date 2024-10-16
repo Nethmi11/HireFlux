@@ -4,68 +4,73 @@
 
 @layer base {
   :root {
-    /* Name: custom color palette */
+    /* General Colors for Neon Vibe */
 
-    /* Gradient for the background */
-    --gradient: #1488CC;
+    /* Very dark blue background with a hint of neon */
+    --background: hsl(220, 45%, 10%); /* Dark blue background, almost black with a slight neon tint */
 
-    /* Background and foreground colors */
-    --background: hsl(220, 45%, 12%); /* Darker bluish background similar to the hero section */
-    --foreground: hsl(0, 0%, 100%); /* Pure white text for contrast */
+    /* White text */
+    --foreground: hsl(0, 0%, 100%); /* Pure white text */
 
-    /* Muted colors */
-    --muted: hsl(220, 20%, 20%); /* A muted, dark blue-gray */
+    /* Muted colors for secondary elements */
+    --muted: hsl(220, 30%, 15%); /* Muted dark blue */
     --muted-foreground: hsl(0, 0%, 90%); /* Light gray for text on muted background */
 
     /* Popover colors */
-    --popover: hsl(220, 40%, 15%); /* Dark blue for popovers */
-    --popover-foreground: hsl(0, 0%, 100%); /* White text for popovers */
+    --popover: hsl(220, 40%, 12%); /* Darker blue for popovers */
+    --popover-foreground: hsl(0, 0%, 100%); /* White text */
 
-    /* Card and button color updated to match the hero section */
-    --card: hsl(210, 80%, 30%); /* Neon bluish color for cards, similar to the neon effect in the hero */
-    --card-foreground: hsl(0, 0%, 100%); /* White text for cards */
+    /* Bluish neon for the cards/jobs and buttons */
+    --card: hsl(210, 100%, 40%); /* Bright neon blue for the cards and jobs */
+    --card-foreground: hsl(0, 0%, 100%); /* White text for the cards */
 
-    /* Sign-up button */
-    --primary: hsl(210, 80%, 30%); /* Neon bluish color for the sign-up button */
+    /* Bluish neon for the sign-up button */
+    --primary: hsl(210, 100%, 40%); /* Neon bluish color for the sign-up button */
     --primary-foreground: hsl(0, 0%, 100%); /* White text for buttons */
 
     /* Border and input colors */
-    --border: hsl(220, 40%, 20%); /* Darker blue for borders */
-    --input: hsl(220, 40%, 20%); /* Same color for inputs */
+    --border: hsl(220, 50%, 20%); /* Slightly lighter blue for borders */
+    --input: hsl(220, 50%, 20%); /* Similar color for input backgrounds */
 
-    /* Secondary color */
-    --secondary: hsl(220, 40%, 20%); /* Dark blue for secondary elements */
-    --secondary-foreground: hsl(0, 0%, 100%); /* White for secondary elements' text */
-
-    /* Accent colors */
-    --accent: hsl(210, 80%, 30%); /* Neon blue accent */
-    --accent-foreground: hsl(0, 0%, 100%); /* White text for accents */
-
-    /* Destructive action colors */
-    --destructive: hsl(0, 70%, 40%); /* Red for destructive actions */
-    --destructive-foreground: hsl(0, 0%, 100%); /* White text for destructive actions */
-
-    /* Ring color */
-    --ring: hsl(210, 80%, 50%); /* Neon blue for hover or focus rings */
+    /* Accent and ring color */
+    --accent: hsl(210, 100%, 50%); /* Neon blue accent for elements like icons */
+    --ring: hsl(210, 100%, 50%); /* Neon blue ring for hover/focus states */
   }
 }
 
-/* Ensure job cards use the updated neon blue color */
+/* Styling for cards (jobs) */
 .job-card {
-  background-color: var(--card);
-  color: var(--card-foreground);
+  background-color: var(--card); /* Neon bluish background for job cards */
+  color: var(--card-foreground); /* White text for job cards */
   border-radius: var(--radius);
   padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3); /* Neon-ish glow around the cards */
 }
 
 /* Sign-up button styling */
 .sign-up-button {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
+  background-color: var(--primary); /* Neon bluish color for the button */
+  color: var(--primary-foreground); /* White text for the button */
   border-radius: var(--radius);
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3); /* Neon-ish glow effect for the button */
+}
+
+/* General background and text styling */
+body {
+  background-color: var(--background); /* Very dark blue background */
+  color: var(--foreground); /* White text */
+}
+
+/* Additional styling for headers and paragraphs */
+h1, h2, h3 {
+  color: var(--foreground); /* White text */
+}
+
+p {
+  color: var(--foreground); /* White text */
 }
 
 @layer base {
