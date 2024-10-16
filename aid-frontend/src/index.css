@@ -4,64 +4,27 @@
 
 @layer base {
   :root {
-    /* General Colors for Neon Vibe */
-
-    /* Very dark blue background with a hint of neon */
-    --background: hsl(220, 45%, 10%); /* Dark blue background */
-
-    /* White text */
-    --foreground: hsl(0, 0%, 100%); /* Pure white text */
-
-    /* Bluish neon for the cards/jobs and buttons */
-    --card: hsl(210, 100%, 50%); /* Brighter neon bluish color for cards */
-    --card-foreground: hsl(0, 0%, 100%); /* White text for cards */
-
-    /* Bluish neon for the sign-up button */
-    --primary: hsl(210, 100%, 50%); /* Neon bluish color for the sign-up button */
-    --primary-foreground: hsl(0, 0%, 100%); /* White text for buttons */
-
-    /* Border and input colors */
-    --border: hsl(220, 50%, 20%); /* Slightly lighter blue for borders */
-    --input: hsl(220, 50%, 20%); /* Similar color for input backgrounds */
-
-    /* Ring color */
-    --ring: hsl(210, 100%, 50%); /* Neon blue for hover/focus rings */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 69 100% 50%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 69 100% 50%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+    --radius: 0.5rem;
   }
-}
-
-/* Styling for cards (jobs) */
-.job-card {
-  background-color: var(--card); /* Neon bluish background for job cards */
-  color: var(--card-foreground); /* White text for job cards */
-  border-radius: var(--radius);
-  padding: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.6); /* Stronger Neon-ish glow around the cards */
-}
-
-/* Sign-up button styling */
-.sign-up-button {
-  background-color: var(--primary); /* Neon bluish color for the button */
-  color: var(--primary-foreground); /* White text for the button */
-  border-radius: var(--radius);
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.6); /* Stronger Neon-ish glow effect for the button */
-}
-
-/* General background and text styling */
-body {
-  background-color: var(--background); /* Very dark blue background */
-  color: var(--foreground); /* White text */
-}
-
-/* Additional styling for headers and paragraphs */
-h1, h2, h3 {
-  color: var(--foreground); /* White text */
-}
-
-p {
-  color: var(--foreground); /* White text */
 }
 
 @layer base {
@@ -78,7 +41,7 @@ p {
     @apply scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0;
   }
   h3 {
-    @apply scroll-m-20 text-xl font-medium tracking-tight;
+    @apply scroll-m-20 text-xl font-medium  tracking-tight;
   }
   p {
     @apply leading-7 [&:not(:first-child)]:mt-6;
