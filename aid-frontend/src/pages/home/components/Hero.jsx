@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section className="py-32 flex justify-center items-center rounded-xl shadow-sm shadow-gray-900 border-white hero">
       <div>
-        <h1 className="text-6xl font-bold text-white drop-shadow-xl">
+        <h1 className="text-6xl font-bold text-white drop-shadow-2xl">
           Find your dream job
         </h1>
       </div>
