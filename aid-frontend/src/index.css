@@ -6,25 +6,34 @@
 /* Define custom CSS variables in :root */
 @layer base {
   :root {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 198 100% 95%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 256, 100%, 85%;
-    --primary-foreground: 222.2 84% 4.9%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --background: 201 59.800000000000004% 6.4%;
+    --foreground: 201 9.200000000000001% 99%;
+
+    --muted: 201 46% 24%;
+    --muted-foreground: 201 9.200000000000001% 58%;
+
+    --popover: 201 46.599999999999994% 10.4%;
+    --popover-foreground: 201 9.200000000000001% 99%;
+
+    --card: 201 46.599999999999994% 10.4%;
+    --card-foreground: 201 9.200000000000001% 99%;
+
+    --border: 201 46% 24%;
+    --input: 201 46% 24%;
+
+    --primary: 201 92% 80%;
+    --primary-foreground: 201 9.200000000000001% 8%;
+
+    --secondary: 201 46% 24%;
+    --secondary-foreground: 201 9.200000000000001% 99%;
+
+    --accent: 201 46% 24%;
+    --accent-foreground: 201 9.200000000000001% 99%;
+
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 210 89% 56%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    --destructive-foreground: 201 9.200000000000001% 99%;
+
+    --ring: 201 92% 80%;
     --radius: 0.5rem;
     /* Neon blue border color */
     --neon-blue: rgba(30, 144, 255, 0.7); /* Adjust the RGBA values as needed */
