@@ -6,34 +6,34 @@
 /* Define custom CSS variables in :root */
 @layer base {
   :root {
-    --background: 228 98.65% 98.26%;
-    --foreground: 228 7.3% 0.52%;
+    --background: 171 38.35% 4.32%;
+    --foreground: 171 5.8999999999999995% 97.7%;
 
-    --muted: 228 7.3% 91.3%;
-    --muted-foreground: 228 3.65% 41.3%;
+    --muted: 171 29.5% 16.200000000000003%;
+    --muted-foreground: 171 5.8999999999999995% 55.4%;
 
-    --popover: 228 31.6% 91.3%;
-    --popover-foreground: 228 7.3% 0.65%;
+    --popover: 171 53.2% 7.0200000000000005%;
+    --popover-foreground: 171 5.8999999999999995% 97.7%;
 
-    --card: 228 31.6% 91.3%;
-    --card-foreground: 228 7.3% 0.65%;
+    --card: 171 53.2% 7.0200000000000005%;
+    --card-foreground: 171 5.8999999999999995% 97.7%;
 
-    --border: 228 12.3% 89.52%;
-    --input: 228 12.3% 89.52%;
+    --border: 171 29.5% 16.200000000000003%;
+    --input: 171 29.5% 16.200000000000003%;
 
-    --primary: 228 73% 13%;
-    --primary-foreground: 228 1.46% 91.3%;
+    --primary: 171 59% 54%;
+    --primary-foreground: 171 5.8999999999999995% 5.4%;
 
-    --secondary: 228 3.65% 95.65%;
-    --secondary-foreground: 228 5.38% 11.3%;
+    --secondary: 171 29.5% 16.200000000000003%;
+    --secondary-foreground: 171 5.8999999999999995% 97.7%;
 
-    --accent: 228 3.65% 95.65%;
-    --accent-foreground: 228 5.38% 11.3%;
+    --accent: 171 29.5% 16.200000000000003%;
+    --accent-foreground: 171 5.8999999999999995% 97.7%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 171 5.8999999999999995% 97.7%;
 
-    --ring: 228 73% 13%;
+    --ring: 171 59% 54%;
 
     --radius: 0.5rem;
     /* Neon blue border color */
