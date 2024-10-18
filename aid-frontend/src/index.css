@@ -8,7 +8,7 @@
   :root {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-    --card: linear-gradient(to right, hsl(210, 65%, 34%), hsl(210, 100%, 60%));
+    --card: linear-gradient(to right, (210, 65%, 34%), (210, 100%, 60%));
     --card-foreground: 222.2 84% 4.9%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
