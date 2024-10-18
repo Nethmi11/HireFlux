@@ -15,8 +15,8 @@
     --popover: 233 51.6% 10.14%;
     --popover-foreground: 233 6.7% 98.9%;
 
-    --card: 256 82% 36%;
-    --card-foreground: 233 6.7% 98.9%;
+    --card: 256 23% 56%;
+    --card-foreground: black;
 
     --border: 233 33.5% 23.400000000000002%;
     --input: 233 33.5% 23.400000000000002%;
@@ -42,7 +42,7 @@
   /* Apply Tailwind utilities to global elements */
  Card {
     background: var(--card); /* Apply translucent color */
-    border: 2px solid var(--neon-blue); /* Apply neon blue border */
+    border: 2px solid var(--card-foreground); /* Apply neon blue border */
     border-radius: var(--radius); /* Rounded corners */
     padding: 20px; /* Space inside the card */
     color: white; /* Text color */
