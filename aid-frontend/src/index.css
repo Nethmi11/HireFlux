@@ -26,12 +26,14 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
     --radius: 0.5rem;
-    --border:256, 44%, 30%;
+    /* Neon blue border color */
+    --neon-blue: rgba(30, 144, 255, 0.7); /* Adjust the RGBA values as needed */
   }
 
   /* Apply Tailwind utilities to global elements */
   * {
-    @apply border-border;
+    @apply border-border; /* This can remain if you're using Tailwind for other borders */
+    border: 2px solid var(--neon-blue); /* Apply neon blue border */
   }
 
   body {
