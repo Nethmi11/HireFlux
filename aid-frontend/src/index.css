@@ -31,8 +31,7 @@
   }
 
   /* Apply Tailwind utilities to global elements */
-  * {
-    @apply border-border; /* This can remain if you're using Tailwind for other borders */
+  Card {
     border: 2px solid var(--neon-blue); /* Apply neon blue border */
   }
 
