@@ -3,28 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define custom CSS variables in :root */
 @layer base {
   :root {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 69 100% 50%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 69 100% 50%;
-    --primary-foreground: 222.2 84% 4.9%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+    /* Name: custom color palette
+       Author: Ilias Ism
+       URL: https://gradient.page */
+
+    --gradient: linear-gradient(to top left,#091E3A,#2F80ED,#2D9EE0); /* Custom linear gradient */
+    --background: 228 98.65% 98.26%;
+    --foreground: 228 7.3% 0.52%;
+
+    --muted: 228 7.3% 91.3%;
+    --muted-foreground: 228 3.65% 41.3%;
+
+    --popover: 228 31.6% 91.3%;
+    --popover-foreground: 228 7.3% 0.65%;
+
+    --card: 228 31.6% 91.3%;
+    --card-foreground: 228 7.3% 0.65%;
+
+    --border: 228 12.3% 89.52%;
+    --input: 228 12.3% 89.52%;
+
+    --primary: 228 73% 13%;
+    --primary-foreground: 228 1.46% 91.3%;
+
+    --secondary: 228 3.65% 95.65%;
+    --secondary-foreground: 228 5.38% 11.3%;
+
+    --accent: 228 3.65% 95.65%;
+    --accent-foreground: 228 5.38% 11.3%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 228 73% 13%;
+
     --radius: 0.5rem;
   }
 
@@ -70,9 +84,9 @@
     background-size: cover;
   }
 
-  /* Custom class for the background gradient */
+  /* Keep the radial gradient for the background-gradient class */
   .background-gradient {
     @apply absolute inset-0 -z-10 w-full h-full flex items-center px-5 py-24;
-    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%); /* Radial gradient retained */
   }
 }
