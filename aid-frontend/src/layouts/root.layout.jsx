@@ -7,7 +7,7 @@ function RootLayout() {
       <main className="container mx-auto relative z-10 p-4">      
         <Outlet />
       </main>
-    <div/>
+      </div>
   );
 }
 
