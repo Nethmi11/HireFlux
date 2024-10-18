@@ -8,7 +8,12 @@
   :root {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-    --card: 69 100% 50%;
+    --card: linear-gradient(
+        180deg, /* Direction of the gradient */
+        rgba(138, 56, 200, 0.5) 0%,  /* Start color with 50% opacity */
+        rgba(138, 44, 200, 0.5) 50%,   /* Mid color with 50% opacity */
+        rgba(138, 33, 200, 0.5) 100%    /* End color with 50% opacity */
+    );
     --card-foreground: 222.2 84% 4.9%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
