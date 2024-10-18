@@ -8,7 +8,7 @@
   :root {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-    --card: 220 100% 28%) ;
+    --card: 220 100% 28%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
@@ -33,6 +33,8 @@
   /* Apply Tailwind utilities to global elements */
   Card {
     border: 2px solid var(--neon-blue); /* Apply neon blue border */
+    color: white; /* Set text color to white */
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white; /* Apply glowing white text effect */  
   }
 
   body {
