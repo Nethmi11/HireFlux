@@ -46,7 +46,7 @@
     border: 2px solid var(--card-foreground); /* Apply neon blue border */
     border-radius: var(--radius); /* Rounded corners */
     padding: 20px; /* Space inside the card */
-    color: white; /* Text color */
+    color: black; /* Text color */
     box-shadow: 0 0 5px var(--neon-blue), 
                 0 0 15px var(--neon-blue), 
                 0 0 30px var(--neon-blue); /* Neon glow effect */
