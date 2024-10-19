@@ -75,7 +75,7 @@
 
   /* Gradient background text underlay */
   .text-underlay-1 {
-    background: linear-gradient(98deg, #0000ff 0%, #0000ff 75%, #800080 75%, #800080 90%, #ffff00 90%, #ffff00 100%);    /* Yellow extends to 100% */
+    background: radial-gradient(98deg, #0000ff 0%, #0000ff 75%, #800080 75%, #800080 90%, #ffff00 90%, #ffff00 100%);    /* Yellow extends to 100% */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
