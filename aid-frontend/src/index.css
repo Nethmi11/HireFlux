@@ -75,12 +75,13 @@
 
   /* Gradient background text underlay */
   .text-underlay-1 {
-    background: linear-gradient(98deg, #0000ff 0deg,     /* Blue starts at 0 degrees */
-                                #0000ff 40deg,    /* Blue extends to 40 degrees (40%) */
-                                #800080 40deg,     /* Purple starts at 40 degrees */
-                                #800080 70deg,    /* Purple extends to 70 degrees (30%) */
-                                #ffff00 70deg,    /* Yellow starts at 70 degrees */
-                                #ffff00 100deg     /* Yellow extends to 100 degrees */);
+    background: linear-gradient(98deg, 
+                                #0000ff 0%,      /* Blue starts at 0% */
+                                #0000ff 40%,     /* Blue extends to 40% */
+                                #800080 40%,     /* Purple starts at 40% */
+                                #800080 70%,     /* Purple extends to 70% */
+                                #ffff00 70%,     /* Yellow starts at 70% */
+                                #ffff00 100%);    /* Yellow extends to 100% */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
